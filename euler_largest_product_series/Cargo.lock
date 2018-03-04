@@ -1,0 +1,4 @@
+[[package]]
+name = "euler_largest_product_series"
+version = "0.1.0"
+

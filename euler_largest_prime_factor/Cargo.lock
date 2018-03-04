@@ -1,0 +1,4 @@
+[[package]]
+name = "euler_largest_prime_factor"
+version = "0.1.0"
+

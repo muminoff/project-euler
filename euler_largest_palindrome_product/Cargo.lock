@@ -1,0 +1,4 @@
+[[package]]
+name = "euler_largest_palindrome_product"
+version = "0.1.0"
+

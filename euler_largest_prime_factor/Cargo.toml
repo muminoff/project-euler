@@ -1,0 +1,6 @@
+[package]
+name = "euler_largest_prime_factor"
+version = "0.1.0"
+authors = ["Sardor Muminov <sardor@insilicogen.com>"]
+
+[dependencies]
