@@ -1,6 +1,6 @@
 const MAX: u64 = 2_000_000;
 fn main() {
-    println!("Generating prime numbers upto 2 million...");
+    println!("Generating prime numbers upto {}...", MAX);
     let numbers: Vec<u64> = generate_prime_numbers(MAX);
     let sum: u64 = numbers.into_iter().sum();
     println!("{}", sum);
