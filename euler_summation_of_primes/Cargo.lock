@@ -1,0 +1,4 @@
+[[package]]
+name = "euler_summation_of_primes"
+version = "0.1.0"
+
