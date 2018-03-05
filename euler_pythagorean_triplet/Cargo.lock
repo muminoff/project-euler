@@ -1,0 +1,4 @@
+[[package]]
+name = "euler_pythagorean_triplet"
+version = "0.1.0"
+
