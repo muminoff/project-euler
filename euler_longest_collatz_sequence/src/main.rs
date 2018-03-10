@@ -1,5 +1,6 @@
 use std::collections::BTreeMap;
 
+#[derive(Debug)]
 enum Number {
     Even,
     Odd,
@@ -25,14 +26,13 @@ fn main() {
         collatz_map.insert(numbers.len(), x);
     }
     let (key, value) = collatz_map.iter().next_back().unwrap();
-    println!("{} has {} chain", value, key);
+    println!("{:?} number {} has {} chain set.", check_number(*value as u64), value, key);
 }
 
 fn check_number(n: u64) -> Number {
-    if n % 2 == 0 {
-        Even
-    } else {
-        Odd
+    match n % 2 {
+        0 => Even,
+        _ => Odd,
     }
 }
 
