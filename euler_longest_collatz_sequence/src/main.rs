@@ -42,11 +42,3 @@ fn process_odd(num: &u64) -> u64 {
     let x = 3 * num + 1;
     x
 }
-
-// fn main() {
-//     let mut map = BTreeMap::new();
-//     map.insert(10, 2);
-//     map.insert(1, 10);
-//     map.insert(0, 214124);
-//     println!("{:?}", map);
-// }
