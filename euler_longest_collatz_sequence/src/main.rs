@@ -5,6 +5,8 @@ enum Number {
     Odd,
 }
 
+use Number::{Even, Odd};
+
 fn main() {
     let mut collatz_map = BTreeMap::new();
     for x in 0..1_000_001 {
@@ -13,8 +15,8 @@ fn main() {
         numbers.push(num);
         while num > 1 {
             match check_number(num) {
-                Number::Even => process_even(&mut num, &mut numbers),
-                Number::Odd => {
+                Even => process_even(&mut num, &mut numbers),
+                Odd => {
                     num = process_odd(&num);
                     numbers.push(num);
                 }
@@ -28,9 +30,9 @@ fn main() {
 
 fn check_number(n: u64) -> Number {
     if n % 2 == 0 {
-        Number::Even
+        Even
     } else {
-        Number::Odd
+        Odd
     }
 }
 
