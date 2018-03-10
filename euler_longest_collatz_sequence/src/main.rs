@@ -22,7 +22,8 @@ fn main() {
         }
         collatz_map.insert(numbers.len(), x);
     }
-    println!("{:?}", collatz_map);
+    let (key, value) = collatz_map.iter().next_back().unwrap();
+    println!("{} has {} chain", value, key);
 }
 
 fn check_number(n: u64) -> Number {
