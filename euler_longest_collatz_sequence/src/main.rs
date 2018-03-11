@@ -13,7 +13,7 @@ fn main() {
     for x in 0..1_000_001 {
         let mut num: u64 = x;
         let mut numbers: Vec<u64> = vec![];
-        numbers.push(num);
+        numbers.push(num); // add first number
         while num > 1 {
             match check_number(num) {
                 Even => process_even(&mut num, &mut numbers),
@@ -26,7 +26,12 @@ fn main() {
         collatz_map.insert(numbers.len(), x);
     }
     let (key, value) = collatz_map.iter().next_back().unwrap();
-    println!("{:?} number {} has {} chain set.", check_number(*value as u64), value, key);
+    println!(
+        "{:?} number {} has {} chain set.",
+        check_number(*value as u64),
+        value,
+        key
+    );
 }
 
 fn check_number(n: u64) -> Number {
